@@ -1,0 +1,154 @@
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, nav, section, summary {
+	display: block;
+}
+body {
+	font: 16px/18px Arial, sans-serif;
+	text-align: center;
+}
+.wrapper {
+	width: 100%;
+	min-width: 1000px;
+}
+
+.content {
+	color: black;
+}
+
+.model-select{
+	text-align: center;
+	font-size: 18px;
+}
+.model-select img{
+	max-width: 1000px;
+	width: 50%;
+}
+
+.headline{
+	font-size: 24px;
+	margin-top: 100px;
+}
+.headline .number{
+	padding: 10px 12px;
+	border: 2px solid black;
+	display: inline-block;
+	border-radius: 100%;
+	margin: 0 10px;
+}
+.headline a{
+	text-decoration: none;
+	padding: 10px 12px;
+	border: 1px solid black;
+	color: black;
+}
+
+
+
+.slider_wrap {
+	margin:0 auto;
+	height:400px;
+	position:relative;
+	overflow:hidden;
+}
+.slider_wrap img {
+	width: 80%;
+	margin: 20px auto;
+	margin-top: 5px;
+}
+.slider_wrap img:first-child {
+	display:block;
+}
+.slider_wrap span {
+	width:15px;
+	height:26px;
+	display:block;
+	position:absolute;
+	top:35%;
+	cursor:pointer;
+	background:url(/slider2_arrow.c8dbd606.png) no-repeat;
+}
+.slider_wrap span.next {
+	right:0;
+	background-position:-15px 0;
+}
+.slider_wrap span.next:hover {
+	background-position:-15px -26px;
+}
+.slider_wrap span.prev {
+	left:0;
+	background-position: 0 0;
+}
+.slider_wrap span.prev:hover {
+	background-position: 0 -26px;
+}
+
+
+#step_2,
+#step_3,
+#step_4,
+#step_5{
+	display: none;
+}
+
+select{
+	margin: 0 auto;
+	display: block;
+	padding: 10px;
+	background: white;
+	border: 1px solid black;
+	color: black;
+	font-size: 16px;
+}
+
+input{
+	margin: 0 auto;
+	margin-bottom: 15px;
+	display: block;
+	padding: 10px;
+	background: #101010;
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 16px;
+}
+
+#step_4 span{
+	font-weight: 600;
+}
+
+.head_logo .div_logo{
+	padding-top: 20px;
+	color: black;
+	font-size: 25px;
+}
+
+.container_auto .col{
+	margin-top: 20px;
+}
+
+.container_auto {
+	margin-top: 30px;
+}
+
+/*# sourceMappingURL=/style.e308ff8e.css.map */
