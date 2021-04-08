@@ -81,22 +81,22 @@
 
             $("body").on('click', '#go_to_step_4', function(event){
                 event.preventDefault();
-				$('#title').html('<span class="number">5</span> Подтверждение данных');
-				$('#step_3').fadeOut(0);
-				$('#step_4').fadeIn(500);
-				firstName = $("#form_first_name").val();
+                firstName = $("#form_first_name").val();
 				lastName = $("#form_last_name").val();
 				middleName = $("#form_middle_name").val();
 				age = $("#form_age").val();
 				phone = $("#form_phone").val();
-                firstName = (firstName === '') ? '{firstName}' : firstName;
-                lastName = (lastName === '') ? '{lastName}' : lastName;
-                middleName = (middleName === '') ? '{middleName}' : middleName;
-                age = (age === '') ? '{age}' : age;
-                phone = (phone === '') ? '{phone}' : phone;
-                $('#step_4_name').text(lastName + ' ' + firstName + ' ' + middleName);
-                $('#step_4_age').text(age);
-                $('#step_4_phone').text(phone);
+                if(firstName === '' || phone === '' || lastName === '' || middleName === '' || age === ''){
+                    $('#title').html('<span class="number" style="color: red;">4</span> Поля не заполнены');
+                }
+                else{
+                    $('#title').html('<span class="number">5</span> Подтверждение данных');
+				    $('#step_3').fadeOut(0);
+				    $('#step_4').fadeIn(500);
+                    $('#step_4_name').text(lastName + ' ' + firstName + ' ' + middleName);
+                    $('#step_4_age').text(age);
+                    $('#step_4_phone').text(phone);
+                };
             });
 
             $("body").on('click', '#finish', function(event){
